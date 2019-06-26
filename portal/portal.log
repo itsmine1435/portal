@@ -1,0 +1,32 @@
+2019-06-26 12:38:59.178  INFO 4368 --- [main] com.portal.demo.PortalApplication        : Starting PortalApplication on Dhalia-PC-15 with PID 4368 (D:\springBoot\portal\target\classes started by Anagha in D:\springBoot\portal)
+2019-06-26 12:38:59.182  INFO 4368 --- [main] com.portal.demo.PortalApplication        : No active profile set, falling back to default profiles: default
+2019-06-26 12:38:59.884  INFO 4368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-26 12:38:59.903  INFO 4368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-06-26 12:39:00.149  INFO 4368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cd30498b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 12:39:00.540  INFO 4368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2019-06-26 12:39:00.560  INFO 4368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-26 12:39:00.560  INFO 4368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-26 12:39:00.566  INFO 4368 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-06-26 12:39:00.566  INFO 4368 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-06-26 12:39:00.566  INFO 4368 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-06-26 12:39:00.569  INFO 4368 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-06-26 12:39:00.641  INFO 4368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-26 12:39:00.641  INFO 4368 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1425 ms
+2019-06-26 12:39:01.055  INFO 4368 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-26 12:39:01.147  INFO 4368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-26 12:39:02.259  INFO 4368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-26 12:39:03.256  INFO 4368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+2019-06-26 12:39:04.417  INFO 4368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM test.DATABASECHANGELOGLOCK
+2019-06-26 12:39:04.420  INFO 4368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM test.DATABASECHANGELOGLOCK WHERE ID=1
+2019-06-26 12:39:04.971  INFO 4368 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-06-26 12:39:06.729  INFO 4368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM test.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-06-26 12:39:06.765  INFO 4368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM test.DATABASECHANGELOG
+2019-06-26 12:39:06.767  INFO 4368 --- [main] l.c.StandardChangeLogHistoryService      : Reading from test.DATABASECHANGELOG
+2019-06-26 12:39:06.767  INFO 4368 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM test.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-06-26 12:39:06.975  INFO 4368 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-06-26 12:39:07.194  INFO 4368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path ''
+2019-06-26 12:39:07.196  INFO 4368 --- [main] com.portal.demo.PortalApplication        : Started PortalApplication in 8.28 seconds (JVM running for 8.702)
+2019-06-26 12:39:42.030  INFO 4368 --- [http-nio-9095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-26 12:39:42.031  INFO 4368 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-26 12:39:42.046  INFO 4368 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-06-26 12:39:42.082  INFO 4368 --- [http-nio-9095-exec-1] c.p.demo.controller.PortalController     : portal application started
